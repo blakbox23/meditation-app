@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.time-select
+ {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sound-picker{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  flex: 1;
+  flex-wrap: wrap;
+
+
+}
+
+
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+.sound-picker button:nth-child(2) {
+  background: #d3d144;
+}
+.sound-picker button:nth-child(3) {
+  background: #796161;
+}
+.sound-picker button:nth-child(4) {
+  background: #4972a1;
+}
+.sound-picker button:nth-child(5) {
+  background: #922821;
+}
+.sound-picker button:nth-child(6) {
+  background: #49a1a1ce;
+}
+.sound-picker button img {
+  height: 100%;
+}
+.time-select button:hover {
+  background: white;
+  color: black;
+}
+.player-container {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+.time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 10%;
+}
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+#ctime{
+  margin-top: 30px;
+  margin-bottom: -70px;
+  height: 40px;
+  max-width: 120px;
+ font-size: 30px;
+ opacity: 0.5;
+}
